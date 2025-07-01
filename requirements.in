@@ -1,0 +1,62 @@
+# HTTP client for async requests
+httpx
+pydantic
+supabase
+asyncio-throttle
+
+# Core LightRAG package - MUST use the GitHub version, not PyPI
+# The PyPI version (lightrag==0.1.0b6) lacks complete API implementation
+# git+https://github.com/HKUDS/LightRAG.git
+lightrag-hku==1.3.4
+
+# Environment management
+python-dotenv
+
+# Configuration Architecture Dependencies
+python-box==7.3.2
+pyyaml
+
+# Standard computing packages
+numpy
+
+# PyTorch CPU-only (must be specified before sentence-transformers)
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch
+
+# Google Gemini AI client
+google-genai
+
+# Vector similarity search (CPU version)
+faiss-cpu
+
+# HTTP client for async requests
+aiohttp
+
+# Sentence transformers for embeddings
+sentence-transformers
+
+# SentencePiece tokenizer for Gemini
+sentencepiece
+
+# HTTP requests (needed for tokenizer downloads)
+requests
+
+# Async support (needed for Gemini API)
+nest-asyncio
+
+# Ollama Python client (needed to communicate with Ollama server)
+ollama
+
+# Token counting
+tiktoken
+
+# FastAPI and server dependencies
+fastapi
+uvicorn
+
+# Additional dependencies required for LightRAG API server
+aiofiles
+python-multipart
+PyJWT
+pipmaster
+pyuca
